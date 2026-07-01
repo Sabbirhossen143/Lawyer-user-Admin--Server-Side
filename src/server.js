@@ -20,9 +20,12 @@ app.use(
   cors({
      origin: [
       "http://localhost:3000",
-      "http://localhost:4000",
+      "https://project-lawyer-user-admin-client-si-eight.vercel.app",
     ],
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
+    optionsSuccessStatus: 200
   })
 );
 
